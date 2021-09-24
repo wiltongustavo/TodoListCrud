@@ -3,11 +3,12 @@ package cap.com.br.repository;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.rest.webmvc.RepositoryRestController;
+
 
 import cap.com.br.model.TodoListModel;
 
-@Repository
+@RepositoryRestController
 public interface TodoListRepository extends JpaRepository<TodoListModel, Long>{
 
 	
